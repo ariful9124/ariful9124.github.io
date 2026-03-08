@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Ariful Islam</title>
+  <meta name="description" content="Research projects by Ariful Islam: mobile sensing, wearable computing, and AI for digital health." />
+
+  <script>try{if(localStorage.theme==='dark'||(!localStorage.theme&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(_){}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Ariful Islam</a>
+        <div class="hidden md:flex items-center gap-0.5">
+          <a href="index.html"        data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Home</a>
+          <a href="research.html"     data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Research</a>
+          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Publications</a>
+          <a href="projects.html"     data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Projects</a>
+          <a href="blog.html"         data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Blog</a>
+          <a href="teaching.html"     data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Teaching</a>
+          <a href="cv.html"           data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">CV</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-4 h-4 icon-sun hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+      <div class="max-w-5xl mx-auto px-4 py-3 space-y-1">
+        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Research</a>
+        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Publications</a>
+        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
+        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Teaching</a>
+        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+
+    <div class="mb-10">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">Projects</h1>
+      <p class="text-gray-500 dark:text-gray-400">Active and completed research projects spanning mobile sensing, wearable computing, and AI-driven health monitoring.</p>
+    </div>
+
+    <!-- Active projects -->
+    <div class="mb-4">
+      <h2 class="text-base font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-8">Active Projects</h2>
+    </div>
+
+    <div class="space-y-12 mb-16">
+
+      <!-- Project 1: mSense-Cancer -->
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400">
+              <span class="w-1.5 h-1.5 bg-green-500 rounded-full inline-block"></span> Active
+            </span>
+            <span class="text-xs text-gray-400">2023 – Present</span>
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">mSense-Cancer</h2>
+          <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-3">Mobile Sensing for Cancer Survivor Quality of Life</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4 text-sm">
+            Cancer survivors experience significant post-treatment symptoms including fatigue, pain, and
+            psychological distress that often go unmonitored between clinical visits. This project develops
+            a passive smartphone sensing system that continuously monitors physical activity, sleep quality,
+            social engagement, and mood-related behaviors to predict patient-reported outcomes in
+            breast and colorectal cancer survivors.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Research Contributions</h4>
+            <ul class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Novel multimodal feature extraction pipeline for cancer symptom prediction</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Semi-supervised learning to handle missing labels in longitudinal data</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>IRB-approved study with N=80 cancer survivors at UVA Health</li>
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">Mobile Sensing</span>
+            <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Semi-supervised ML</span>
+            <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300">Oncology</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="publications.html" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">
+              Papers
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6 mb-4">
+            <svg viewBox="0 0 300 200" class="w-full h-auto">
+              <!-- System diagram -->
+              <rect x="10" y="70" width="70" height="60" rx="10" fill="none" stroke="#4f46e5" stroke-width="2"/>
+              <text x="45" y="96" text-anchor="middle" font-size="9" fill="#4f46e5">Smartphone</text>
+              <text x="45" y="110" text-anchor="middle" font-size="8" fill="#6b7280">GPS, Accel,</text>
+              <text x="45" y="122" text-anchor="middle" font-size="8" fill="#6b7280">Screen, Calls</text>
+              <!-- Arrow right -->
+              <path d="M80 100 L120 100" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+              <!-- Processing box -->
+              <rect x="120" y="70" width="70" height="60" rx="10" fill="none" stroke="#7c3aed" stroke-width="2"/>
+              <text x="155" y="96" text-anchor="middle" font-size="9" fill="#7c3aed">Feature</text>
+              <text x="155" y="110" text-anchor="middle" font-size="9" fill="#7c3aed">Extraction</text>
+              <text x="155" y="124" text-anchor="middle" font-size="8" fill="#6b7280">+ ML Model</text>
+              <!-- Arrow right -->
+              <path d="M190 100 L225 100" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+              <!-- Output box -->
+              <rect x="225" y="75" width="65" height="50" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+              <text x="257" y="96" text-anchor="middle" font-size="8" fill="#14532d">QoL Score</text>
+              <text x="257" y="110" text-anchor="middle" font-size="8" fill="#14532d">Fatigue</text>
+              <text x="257" y="124" text-anchor="middle" font-size="8" fill="#14532d">Pain</text>
+              <!-- Arrowheads -->
+              <defs>
+                <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+                  <polygon points="0 0, 8 3, 0 6" fill="#9ca3af"/>
+                </marker>
+                <marker id="arrowhead2" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+                  <polygon points="0 0, 8 3, 0 6" fill="#9ca3af"/>
+                </marker>
+              </defs>
+              <!-- Timeline at bottom -->
+              <text x="150" y="165" text-anchor="middle" font-size="8" fill="#9ca3af">12-week longitudinal study</text>
+              <line x1="30" y1="155" x2="270" y2="155" stroke="#e5e7eb" stroke-width="1.5"/>
+              <circle cx="30" cy="155" r="4" fill="#4f46e5"/>
+              <circle cx="90" cy="155" r="4" fill="#4f46e5"/>
+              <circle cx="150" cy="155" r="4" fill="#4f46e5"/>
+              <circle cx="210" cy="155" r="4" fill="#4f46e5"/>
+              <circle cx="270" cy="155" r="4" fill="#4f46e5"/>
+              <text x="30"  y="148" text-anchor="middle" font-size="7" fill="#9ca3af">W0</text>
+              <text x="90"  y="148" text-anchor="middle" font-size="7" fill="#9ca3af">W3</text>
+              <text x="150" y="148" text-anchor="middle" font-size="7" fill="#9ca3af">W6</text>
+              <text x="210" y="148" text-anchor="middle" font-size="7" fill="#9ca3af">W9</text>
+              <text x="270" y="148" text-anchor="middle" font-size="7" fill="#9ca3af">W12</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Project 2: Multitask JITAI -->
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400">
+              <span class="w-1.5 h-1.5 bg-green-500 rounded-full inline-block"></span> Active
+            </span>
+            <span class="text-xs text-gray-400">2023 – Present</span>
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">MultitaskMH</h2>
+          <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-3">Multitask Learning for mHealth Intervention Availability</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4 text-sm">
+            Just-in-time adaptive interventions (JITAIs) require knowing when a person is both available
+            and receptive to a notification. This project builds a multitask learning framework that
+            simultaneously predicts availability, receptivity, stress level, and activity type from
+            continuous smartphone sensor streams — enabling smarter intervention timing.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Research Contributions</h4>
+            <ul class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Shared-private multitask architecture outperforming single-task by 23% AUC</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Uncertainty-aware prediction to avoid over-burdening users</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Validated on HeartSteps and GLOBEM benchmark datasets</li>
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tag bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300">Multitask Learning</span>
+            <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">JITAIs</span>
+            <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">mHealth</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">GitHub</a>
+            <a href="publications.html" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">AAAI 2024 Paper</a>
+          </div>
+        </div>
+        <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6">
+          <svg viewBox="0 0 300 200" class="w-full h-auto">
+            <!-- Shared encoder -->
+            <rect x="100" y="20" width="100" height="40" rx="8" fill="#4f46e5" opacity="0.85"/>
+            <text x="150" y="36" text-anchor="middle" font-size="9" fill="white">Shared Encoder</text>
+            <text x="150" y="50" text-anchor="middle" font-size="8" fill="#c7d2fe">Transformer + LSTM</text>
+            <!-- Input arrow -->
+            <path d="M150 0 L150 20" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <text x="150" y="10" text-anchor="middle" font-size="7" fill="#9ca3af">Sensor Stream</text>
+            <!-- Task heads -->
+            <rect x="20"  y="90" width="60" height="35" rx="6" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+            <text x="50"  y="107" text-anchor="middle" font-size="8" fill="#7c3aed">Availability</text>
+            <text x="50"  y="119" text-anchor="middle" font-size="7" fill="#9ca3af">Task Head 1</text>
+
+            <rect x="92"  y="90" width="60" height="35" rx="6" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+            <text x="122" y="107" text-anchor="middle" font-size="8" fill="#2563eb">Receptivity</text>
+            <text x="122" y="119" text-anchor="middle" font-size="7" fill="#9ca3af">Task Head 2</text>
+
+            <rect x="164" y="90" width="60" height="35" rx="6" fill="none" stroke="#0891b2" stroke-width="1.5"/>
+            <text x="194" y="107" text-anchor="middle" font-size="8" fill="#0891b2">Stress</text>
+            <text x="194" y="119" text-anchor="middle" font-size="7" fill="#9ca3af">Task Head 3</text>
+
+            <rect x="236" y="90" width="60" height="35" rx="6" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+            <text x="266" y="107" text-anchor="middle" font-size="8" fill="#16a34a">Activity</text>
+            <text x="266" y="119" text-anchor="middle" font-size="7" fill="#9ca3af">Task Head 4</text>
+
+            <!-- Arrows down -->
+            <line x1="120" y1="60" x2="50"  y2="90" stroke="#c4b5fd" stroke-width="1"/>
+            <line x1="135" y1="60" x2="122" y2="90" stroke="#c4b5fd" stroke-width="1"/>
+            <line x1="165" y1="60" x2="194" y2="90" stroke="#c4b5fd" stroke-width="1"/>
+            <line x1="180" y1="60" x2="266" y2="90" stroke="#c4b5fd" stroke-width="1"/>
+
+            <!-- Decision -->
+            <rect x="95" y="155" width="110" height="30" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+            <text x="150" y="168" text-anchor="middle" font-size="9" fill="#92400e">Intervention</text>
+            <text x="150" y="180" text-anchor="middle" font-size="8" fill="#b45309">Decision Engine</text>
+
+            <line x1="50"  y1="125" x2="120" y2="155" stroke="#9ca3af" stroke-width="1"/>
+            <line x1="122" y1="125" x2="135" y2="155" stroke="#9ca3af" stroke-width="1"/>
+            <line x1="194" y1="125" x2="165" y2="155" stroke="#9ca3af" stroke-width="1"/>
+            <line x1="266" y1="125" x2="180" y2="155" stroke="#9ca3af" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Project 3: NeuroPose -->
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400">
+              <span class="w-1.5 h-1.5 bg-green-500 rounded-full inline-block"></span> Active
+            </span>
+            <span class="text-xs text-gray-400">2022 – Present</span>
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">NeuroPose</h2>
+          <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-3">Wearable IMU Sensing for Neuromuscular Disease Assessment</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4 text-sm">
+            Amyotrophic lateral sclerosis (ALS) progresses rapidly and requires frequent objective
+            assessment of motor function. NeuroPose uses a network of body-worn IMU sensors to
+            extract gait, limb movement, and postural control features, feeding into a longitudinal
+            deep learning model that tracks disease progression and predicts clinical outcomes.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Research Contributions</h4>
+            <ul class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Multi-site wearable IMU dataset for ALS and healthy controls (N=120)</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Temporal CNN-LSTM for longitudinal motor function tracking</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Clinical validation against ALSFRS-R scale (r=0.87)</li>
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Wearable IMU</span>
+            <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">Gait Analysis</span>
+            <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300">ALS / Neurology</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">GitHub</a>
+            <a href="publications.html" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">EMBC 2023</a>
+          </div>
+        </div>
+        <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-4">
+          <!-- Stick figure with sensor placements -->
+          <svg viewBox="0 0 300 200" class="w-full h-auto">
+            <!-- Body outline -->
+            <circle cx="150" cy="30" r="18" fill="none" stroke="#6b7280" stroke-width="2"/>
+            <line x1="150" y1="48" x2="150" y2="110" stroke="#6b7280" stroke-width="2.5"/>
+            <line x1="150" y1="65" x2="110" y2="95" stroke="#6b7280" stroke-width="2.5"/>
+            <line x1="150" y1="65" x2="190" y2="95" stroke="#6b7280" stroke-width="2.5"/>
+            <line x1="150" y1="110" x2="125" y2="165" stroke="#6b7280" stroke-width="2.5"/>
+            <line x1="150" y1="110" x2="175" y2="165" stroke="#6b7280" stroke-width="2.5"/>
+            <!-- Sensor nodes -->
+            <rect x="104" y="88" width="12" height="12" rx="3" fill="#4f46e5"/>
+            <rect x="184" y="88" width="12" height="12" rx="3" fill="#4f46e5"/>
+            <rect x="143" y="103" width="14" height="12" rx="3" fill="#7c3aed"/>
+            <rect x="119" y="158" width="12" height="12" rx="3" fill="#2563eb"/>
+            <rect x="169" y="158" width="12" height="12" rx="3" fill="#2563eb"/>
+            <!-- Labels -->
+            <text x="95"  y="96" text-anchor="end" font-size="7" fill="#4f46e5">Wrist L</text>
+            <text x="205" y="96" text-anchor="start" font-size="7" fill="#4f46e5">Wrist R</text>
+            <text x="165" y="114" text-anchor="start" font-size="7" fill="#7c3aed">Waist</text>
+            <text x="110" y="175" text-anchor="middle" font-size="7" fill="#2563eb">Ankle L</text>
+            <text x="180" y="175" text-anchor="middle" font-size="7" fill="#2563eb">Ankle R</text>
+            <!-- Signal snippet on right -->
+            <text x="230" y="40" font-size="7" fill="#9ca3af">IMU Signal</text>
+            <polyline points="215,55 225,45 235,60 245,40 255,55 265,48 275,55 285,45"
+              fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round"/>
+            <text x="230" y="80" font-size="7" fill="#9ca3af">Gait Features</text>
+            <rect x="215" y="85" width="70" height="10" rx="2" fill="#e0e7ff"/>
+            <rect x="215" y="85" width="52" height="10" rx="2" fill="#4f46e5" opacity="0.7"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Project 4: DigitalPhen -->
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-400">
+              <span class="w-1.5 h-1.5 bg-yellow-500 rounded-full inline-block"></span> Ongoing
+            </span>
+            <span class="text-xs text-gray-400">2022 – Present</span>
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">DigitalPhen</h2>
+          <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-3">Smartphone-Based Digital Phenotyping Platform</p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4 text-sm">
+            An open-source Android/iOS data collection framework for longitudinal digital phenotyping
+            studies. DigitalPhen collects 15+ behavioral and contextual streams (GPS, accelerometry,
+            Bluetooth proximity, app usage, screen state, ambient audio features) with built-in
+            privacy controls and configurable EMA prompts.
+          </p>
+          <div class="mb-4">
+            <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Research Contributions</h4>
+            <ul class="space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Privacy-preserving passive sensing with differential privacy guarantees</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Used across 3 IRB-approved studies (N=250 participants total)</li>
+              <li class="flex items-start gap-2"><span class="text-indigo-500 mt-0.5">▸</span>Open-source toolkit with preprocessing pipelines and ML baselines</li>
+            </ul>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300">Open Source</span>
+            <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">Android / iOS</span>
+            <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Digital Phenotyping</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors">GitHub</a>
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">Documentation</a>
+          </div>
+        </div>
+        <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6">
+          <svg viewBox="0 0 300 200" class="w-full h-auto">
+            <!-- Phone -->
+            <rect x="110" y="20" width="80" height="130" rx="12" fill="none" stroke="#4f46e5" stroke-width="2.5"/>
+            <rect x="117" y="32" width="66" height="90" rx="4" fill="#eef2ff" class="dark:fill-indigo-950"/>
+            <circle cx="150" cy="138" r="7" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+            <!-- Sensor streams inside screen -->
+            <text x="150" y="46" text-anchor="middle" font-size="7" fill="#4f46e5" font-weight="600">DigitalPhen</text>
+            <line x1="120" y1="50" x2="180" y2="50" stroke="#e0e7ff" stroke-width="1"/>
+
+            <text x="125" y="62" font-size="6" fill="#6b7280">● GPS</text>
+            <text x="155" y="62" font-size="6" fill="#6b7280">● Accel</text>
+            <text x="125" y="74" font-size="6" fill="#6b7280">● Screen</text>
+            <text x="155" y="74" font-size="6" fill="#6b7280">● BT</text>
+            <text x="125" y="86" font-size="6" fill="#6b7280">● Audio</text>
+            <text x="155" y="86" font-size="6" fill="#6b7280">● Apps</text>
+
+            <!-- Mini chart -->
+            <polyline points="120,105 130,100 140,108 150,95 160,102 170,98 180,105"
+              fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-linecap="round"/>
+
+            <!-- Upload arrow -->
+            <path d="M190 80 L230 80" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,2"/>
+            <text x="240" y="70" font-size="7" fill="#9ca3af">Encrypted</text>
+            <text x="240" y="80" font-size="7" fill="#9ca3af">Upload</text>
+
+            <!-- Server -->
+            <rect x="240" y="90" width="50" height="45" rx="6" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+            <text x="265" y="108" text-anchor="middle" font-size="7" fill="#7c3aed">Analysis</text>
+            <text x="265" y="120" text-anchor="middle" font-size="7" fill="#7c3aed">Server</text>
+            <text x="265" y="130" text-anchor="middle" font-size="6" fill="#9ca3af">Diff. Privacy</text>
+
+            <!-- Participants label -->
+            <text x="30" y="110" font-size="8" fill="#9ca3af">N=250</text>
+            <text x="30" y="122" font-size="8" fill="#9ca3af">participants</text>
+            <line x1="108" y1="85" x2="65" y2="110" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="3,2"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tools & Software -->
+    <section>
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Tools &amp; Software</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+          <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-1">Sensor Data Preprocessing Toolkit</h4>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Python library for cleaning, segmenting, and feature-extracting IMU and GPS data</p>
+          <a href="#" class="text-xs text-indigo-600 dark:text-indigo-400 hover:underline">GitHub →</a>
+        </div>
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+          <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-1">EMA Response Predictor</h4>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Predicts EMA non-response to optimize survey timing in mHealth studies</p>
+          <a href="#" class="text-xs text-indigo-600 dark:text-indigo-400 hover:underline">GitHub →</a>
+        </div>
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+          <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-1">GLOBEM Benchmark Extensions</h4>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">Additional baselines and evaluation scripts for the GLOBEM mental health benchmark</p>
+          <a href="#" class="text-xs text-indigo-600 dark:text-indigo-400 hover:underline">GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-400 dark:text-gray-500">© 2025 Ariful Islam · University of Virginia</p>
+      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-gray-500">
+        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">Scholar</a>
+        <a href="mailto:arifulislam@virginia.edu" class="hover:text-indigo-500 transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

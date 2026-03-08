@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariful Islam — PhD Researcher, UVA</title>
+  <meta name="description" content="Ariful Islam is a PhD researcher at the University of Virginia working on AI for digital health, mobile sensing, and wearable computing." />
+
+  <!-- Prevent dark-mode flash -->
+  <script>try{if(localStorage.theme==='dark'||(!localStorage.theme&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(_){}</script>
+
+  <!-- Tailwind CSS (Play CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+
+  <!-- Fonts + Custom CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen">
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand -->
+        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors text-base">
+          Ariful Islam
+        </a>
+        <!-- Desktop links -->
+        <div class="hidden md:flex items-center gap-0.5">
+          <a href="index.html"       data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Home</a>
+          <a href="research.html"    data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Research</a>
+          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Publications</a>
+          <a href="projects.html"    data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Projects</a>
+          <a href="blog.html"        data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Blog</a>
+          <a href="teaching.html"    data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Teaching</a>
+          <a href="cv.html"          data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">CV</a>
+        </div>
+        <!-- Right: theme + hamburger -->
+        <div class="flex items-center gap-1">
+          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-4 h-4 icon-sun hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button id="mobile-menu-btn" aria-expanded="false" aria-label="Open menu" class="md:hidden p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+      <div class="max-w-5xl mx-auto px-4 py-3 space-y-1">
+        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Research</a>
+        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Publications</a>
+        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
+        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Teaching</a>
+        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ MAIN ══════════════════════════════════ -->
+  <main>
+
+    <!-- ── Hero ───────────────────────────────────────────────────────────── -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-12">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+
+        <!-- Avatar -->
+        <div class="flex-shrink-0">
+          <div class="w-36 h-36 rounded-2xl avatar-placeholder text-4xl shadow-lg">
+            AI
+          </div>
+          <!-- Replace the div above with: <img src="assets/images/profile.jpg" alt="Ariful Islam" class="w-36 h-36 rounded-2xl object-cover shadow-lg" /> -->
+        </div>
+
+        <!-- Info -->
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+            Ariful Islam
+          </h1>
+          <p class="text-lg text-indigo-600 dark:text-indigo-400 font-medium mb-1">
+            PhD Researcher
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 mb-5">
+            Department of Systems and Information Engineering<br />
+            University of Virginia, Charlottesville, VA
+          </p>
+
+          <!-- Social links -->
+          <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+            <a href="https://scholar.google.com/citations?user=PLACEHOLDER" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              <!-- Scholar icon -->
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              Google Scholar
+            </a>
+            <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/arifulislamuva" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:arifulislam@virginia.edu"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+          </div>
+
+          <!-- Quick stats -->
+          <div class="flex flex-wrap justify-center md:justify-start gap-6 text-center">
+            <div>
+              <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">10+</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400">Publications</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">4</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400">Active Projects</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">3</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400">Years PhD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto"></div>
+
+    <!-- ── About ──────────────────────────────────────────────────────────── -->
+    <section id="about" class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5">About Me</h2>
+      <div class="prose max-w-none text-gray-600 dark:text-gray-400 space-y-4 leading-relaxed">
+        <p>
+          I am a PhD researcher in the Department of Systems and Information Engineering at the
+          <strong class="text-gray-800 dark:text-gray-200">University of Virginia</strong>, where I develop
+          machine learning and signal processing methods to extract clinically meaningful insights from
+          passively collected mobile and wearable sensor data.
+        </p>
+        <p>
+          My research sits at the intersection of <em>ubiquitous computing</em>, <em>biomedical signal processing</em>,
+          and <em>machine learning</em>, with a focus on building scalable digital health systems that can
+          improve quality of life for individuals living with mental illness, chronic disease, and
+          neuromuscular disorders—without requiring active user effort.
+        </p>
+        <p>
+          Before joining UVA, I completed my undergraduate studies in [Your Undergraduate Institution] and
+          gained research experience in [briefly describe prior experience]. I am advised by
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">Prof. [Advisor Name]</a>.
+        </p>
+      </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto"></div>
+
+    <!-- ── Research Interests ─────────────────────────────────────────────── -->
+    <section id="interests" class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Research Interests</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">AI for Digital Health</span>
+        <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">Mobile Sensing</span>
+        <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300">Wearable Computing</span>
+        <span class="tag bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300">Multimodal Machine Learning</span>
+        <span class="tag bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300">Biomedical Signal Processing</span>
+        <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Digital Phenotyping</span>
+        <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Mental Health Monitoring</span>
+        <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">Chronic Disease Management</span>
+        <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300">mHealth Interventions</span>
+        <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300">Human Activity Recognition</span>
+      </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto"></div>
+
+    <!-- ── Current Research Focus ─────────────────────────────────────────── -->
+    <section id="focus" class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Current Research Focus</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Focus card 1 -->
+        <div class="card-hover bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+          <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Mobile Sensing for Mental Health</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            Building passive smartphone sensing pipelines to detect early warning signs of depression,
+            anxiety, and psychosis through behavioral patterns.
+          </p>
+        </div>
+
+        <!-- Focus card 2 -->
+        <div class="card-hover bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+          <div class="w-10 h-10 bg-violet-100 dark:bg-violet-900/40 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600 dark:text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Wearable Sensing for Neuromuscular Disease</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            Using IMU-based wearable sensors to quantify movement impairment and track disease progression
+            in ALS and other neuromuscular conditions.
+          </p>
+        </div>
+
+        <!-- Focus card 3 -->
+        <div class="card-hover bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5">
+          <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">mHealth for Cancer Survivors</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            Developing smartphone-based tools to monitor quality of life, fatigue, and pain in
+            post-treatment cancer survivors using multimodal passive sensing.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto"></div>
+
+    <!-- ── Recent Publications ─────────────────────────────────────────────── -->
+    <section id="publications" class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Recent Publications</h2>
+        <a href="publications.html" class="text-sm text-indigo-600 dark:text-indigo-400 hover:underline">View all →</a>
+      </div>
+      <div class="space-y-5">
+
+        <!-- Pub 1 -->
+        <div class="pub-entry">
+          <div class="flex flex-wrap items-start gap-2 mb-1">
+            <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs">Conference</span>
+            <span class="text-xs text-gray-400 dark:text-gray-500">UbiComp/IMWUT 2024</span>
+          </div>
+          <h3 class="font-medium text-gray-900 dark:text-white mb-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer">
+            MobileHealth: A Multimodal Sensing Framework for Passive Mental Health Monitoring
+          </h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+            <strong class="text-gray-700 dark:text-gray-300">Ariful Islam</strong>, [Co-author A], [Co-author B], [Advisor Name]
+          </p>
+          <div class="flex gap-2">
+            <a href="#" class="text-xs px-2.5 py-1 rounded border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">PDF</a>
+            <a href="#" class="text-xs px-2.5 py-1 rounded border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">Code</a>
+          </div>
+        </div>
+
+        <!-- Pub 2 -->
+        <div class="pub-entry">
+          <div class="flex flex-wrap items-start gap-2 mb-1">
+            <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs">Conference</span>
+            <span class="text-xs text-gray-400 dark:text-gray-500">AAAI 2024</span>
+          </div>
+          <h3 class="font-medium text-gray-900 dark:text-white mb-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer">
+            Multitask Learning for Intervention Availability Prediction in Mobile Health Applications
+          </h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+            <strong class="text-gray-700 dark:text-gray-300">Ariful Islam</strong>, [Co-author A], [Advisor Name]
+          </p>
+          <div class="flex gap-2">
+            <a href="#" class="text-xs px-2.5 py-1 rounded border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">PDF</a>
+            <a href="#" class="text-xs px-2.5 py-1 rounded border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">Code</a>
+          </div>
+        </div>
+
+        <!-- Pub 3 -->
+        <div class="pub-entry">
+          <div class="flex flex-wrap items-start gap-2 mb-1">
+            <span class="tag bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-xs">Journal</span>
+            <span class="text-xs text-gray-400 dark:text-gray-500">IEEE JBHI 2024</span>
+          </div>
+          <h3 class="font-medium text-gray-900 dark:text-white mb-1 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer">
+            Wearable Sensor-Based Activity Recognition for Chronic Disease Monitoring: A Systematic Review
+          </h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+            <strong class="text-gray-700 dark:text-gray-300">Ariful Islam</strong>, [Co-author A], [Co-author B]
+          </p>
+          <div class="flex gap-2">
+            <a href="#" class="text-xs px-2.5 py-1 rounded border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-indigo-400 hover:text-indigo-600 transition-colors">PDF</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto"></div>
+
+    <!-- ── News / Updates ─────────────────────────────────────────────────── -->
+    <section id="news" class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">News &amp; Updates</h2>
+      <div class="space-y-4">
+        <div class="flex gap-4">
+          <span class="text-sm text-gray-400 dark:text-gray-500 w-24 flex-shrink-0 pt-0.5">Mar 2025</span>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Paper accepted at [Conference Name 2025]. Looking forward to presenting in [City]!</p>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-sm text-gray-400 dark:text-gray-500 w-24 flex-shrink-0 pt-0.5">Jan 2025</span>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Started new collaboration with [Lab/Institution] on digital phenotyping for psychosis.</p>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-sm text-gray-400 dark:text-gray-500 w-24 flex-shrink-0 pt-0.5">Nov 2024</span>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Presented research at UbiComp 2024 in Melbourne, Australia.</p>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-sm text-gray-400 dark:text-gray-500 w-24 flex-shrink-0 pt-0.5">Sep 2024</span>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Received [Fellowship/Award Name] for research in AI-driven health monitoring.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider max-w-5xl mx-auto"></div>
+
+    <!-- ── Contact ─────────────────────────────────────────────────────────── -->
+    <section id="contact" class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Contact</h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-5 max-w-xl">
+        I'm always happy to discuss research collaborations, dataset sharing, or opportunities.
+        Feel free to reach out!
+      </p>
+      <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <a href="mailto:arifulislam@virginia.edu" class="hover:text-indigo-600 dark:hover:text-indigo-400">arifulislam@virginia.edu</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Rice Hall, University of Virginia, Charlottesville, VA 22904</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 mt-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-400 dark:text-gray-500">
+        © 2025 Ariful Islam · University of Virginia
+      </p>
+      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-gray-500">
+        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">Scholar</a>
+        <a href="mailto:arifulislam@virginia.edu" class="hover:text-indigo-500 transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Ariful Islam</title>
+  <meta name="description" content="Technical explainers, research insights, and tutorials on machine learning for health data by Ariful Islam." />
+
+  <script>try{if(localStorage.theme==='dark'||(!localStorage.theme&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(_){}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Ariful Islam</a>
+        <div class="hidden md:flex items-center gap-0.5">
+          <a href="index.html"        data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Home</a>
+          <a href="research.html"     data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Research</a>
+          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Publications</a>
+          <a href="projects.html"     data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Projects</a>
+          <a href="blog.html"         data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Blog</a>
+          <a href="teaching.html"     data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Teaching</a>
+          <a href="cv.html"           data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">CV</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-4 h-4 icon-sun hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-4 h-4 icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+      <div class="max-w-5xl mx-auto px-4 py-3 space-y-1">
+        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Research</a>
+        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Publications</a>
+        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
+        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Teaching</a>
+        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+
+    <div class="mb-10">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">Blog &amp; Research Notes</h1>
+      <p class="text-gray-500 dark:text-gray-400 max-w-xl">
+        Technical explainers, research insights, tutorials, and notes on machine learning for health data.
+      </p>
+    </div>
+
+    <!-- Featured post -->
+    <div class="mb-12">
+      <div class="blog-card card-hover rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
+        <!-- Visual header -->
+        <div class="bg-gradient-to-br from-indigo-500 to-violet-600 p-8 relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+            <svg viewBox="0 0 400 200" class="w-full h-full" preserveAspectRatio="xMidYMid slice">
+              <polyline points="0,150 50,100 100,130 150,80 200,110 250,60 300,90 350,50 400,70" fill="none" stroke="white" stroke-width="3"/>
+              <polyline points="0,180 60,140 120,160 180,120 240,145 300,110 360,130 400,100" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="relative inline-block px-2.5 py-0.5 rounded-full bg-white/20 text-white text-xs font-medium mb-3">Featured</span>
+          <h2 class="blog-title relative text-xl font-bold text-white mb-2 transition-colors">
+            Introduction to Mobile Sensing for Mental Health Research: From Raw Data to Clinical Insights
+          </h2>
+          <p class="relative text-indigo-100 text-sm">A comprehensive overview of the passive sensing pipeline</p>
+        </div>
+        <div class="p-6">
+          <div class="flex flex-wrap items-center gap-3 mb-4 text-xs text-gray-400">
+            <span>March 1, 2025</span>
+            <span>·</span>
+            <span>12 min read</span>
+            <span>·</span>
+            <span class="tag bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">Mobile Sensing</span>
+            <span class="tag bg-violet-50 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400">Tutorial</span>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
+            Smartphones collect a wealth of behavioral data passively — without requiring any active input
+            from users. In this post, I walk through the full pipeline from raw GPS and accelerometer
+            readings to meaningful behavioral features for mental health prediction. We'll cover data
+            collection, preprocessing, feature extraction, and model training with Python code examples.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-400 font-medium hover:underline">
+            Read post
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post grid -->
+    <div class="grid sm:grid-cols-2 gap-6 mb-12">
+
+      <!-- Post 2 -->
+      <div class="blog-card card-hover rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs">Digital Biomarkers</span>
+          <span class="tag bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs">Explainer</span>
+        </div>
+        <h3 class="blog-title text-base font-semibold text-gray-900 dark:text-white mb-2 transition-colors leading-snug">
+          Understanding Digital Biomarkers: From Sensor Data to Clinical Decision Support
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+          What exactly is a "digital biomarker"? This post demystifies the concept, distinguishes
+          it from traditional biomarkers, and surveys how smartphone and wearable data are being
+          validated for clinical use.
+        </p>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span>Feb 10, 2025 · 8 min read</span>
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Read →</a>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="blog-card card-hover rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 text-xs">Tutorial</span>
+          <span class="tag bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs">Python</span>
+        </div>
+        <h3 class="blog-title text-base font-semibold text-gray-900 dark:text-white mb-2 transition-colors leading-snug">
+          Tutorial: Preprocessing Accelerometer Data with Python for Activity Recognition
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+          A step-by-step guide to loading, resampling, filtering, and extracting features from
+          raw accelerometer time-series data using <code class="bg-gray-200 dark:bg-gray-700 px-1 rounded">numpy</code> and
+          <code class="bg-gray-200 dark:bg-gray-700 px-1 rounded">scipy</code>.
+        </p>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span>Jan 22, 2025 · 15 min read</span>
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Read →</a>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="blog-card card-hover rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag bg-violet-50 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 text-xs">Research Insight</span>
+          <span class="tag bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs">Multitask Learning</span>
+        </div>
+        <h3 class="blog-title text-base font-semibold text-gray-900 dark:text-white mb-2 transition-colors leading-snug">
+          Why Multitask Learning Works for Mobile Health — and When It Doesn't
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+          Multitask learning promises better generalization by sharing representations across
+          related tasks. But in mHealth, task relationships aren't always beneficial. Here I share
+          lessons from empirical experiments on real sensing datasets.
+        </p>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span>Dec 15, 2024 · 10 min read</span>
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Read →</a>
+        </div>
+      </div>
+
+      <!-- Post 5 -->
+      <div class="blog-card card-hover rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-xs">Research Ethics</span>
+        </div>
+        <h3 class="blog-title text-base font-semibold text-gray-900 dark:text-white mb-2 transition-colors leading-snug">
+          Privacy, Consent, and Ethics in Passive Smartphone Sensing Research
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+          Collecting continuous behavioral data from smartphones raises important ethical questions.
+          This post discusses IRB considerations, participant consent, data minimization, and
+          anonymization strategies I've encountered in practice.
+        </p>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span>Nov 8, 2024 · 7 min read</span>
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Read →</a>
+        </div>
+      </div>
+
+      <!-- Post 6 -->
+      <div class="blog-card card-hover rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 text-xs">Tutorial</span>
+          <span class="tag bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs">Deep Learning</span>
+        </div>
+        <h3 class="blog-title text-base font-semibold text-gray-900 dark:text-white mb-2 transition-colors leading-snug">
+          Building a Transformer for Irregular Time-Series Health Data with PyTorch
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+          Health sensor data is often irregularly sampled. This tutorial shows how to implement
+          a time-aware Transformer that handles variable-length inputs and missing modalities
+          common in real-world mHealth studies.
+        </p>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span>Oct 3, 2024 · 18 min read</span>
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Read →</a>
+        </div>
+      </div>
+
+      <!-- Post 7 -->
+      <div class="blog-card card-hover rounded-xl border border-gray-200 dark:border-gray-800 p-6 bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-wrap gap-2 mb-3">
+          <span class="tag bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs">Research Insight</span>
+          <span class="tag bg-gray-100 dark:bg-gray-800 text-gray-500 text-xs">Wearables</span>
+        </div>
+        <h3 class="blog-title text-base font-semibold text-gray-900 dark:text-white mb-2 transition-colors leading-snug">
+          IMU Signal Processing Fundamentals for Biomedical Applications
+        </h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
+          A researcher's guide to accelerometer and gyroscope signals: coordinate systems, sensor fusion,
+          noise filtering, and extracting clinically meaningful features for gait and movement analysis.
+        </p>
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span>Sep 12, 2024 · 11 min read</span>
+          <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">Read →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Subscribe / Stay updated -->
+    <div class="rounded-2xl border border-indigo-200 dark:border-indigo-900/50 bg-indigo-50 dark:bg-indigo-950/30 p-8 text-center">
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Stay Updated</h3>
+      <p class="text-gray-600 dark:text-gray-400 text-sm mb-5 max-w-md mx-auto">
+        I write about mobile sensing, ML for health, and research workflow. New posts are shared on
+        Twitter/X and LinkedIn.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="#" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-indigo-400 hover:text-indigo-600 transition-colors bg-white dark:bg-gray-900">
+          <!-- X/Twitter icon -->
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Follow on X
+        </a>
+        <a href="https://linkedin.com/in/arifulislamuva" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-indigo-400 hover:text-indigo-600 transition-colors bg-white dark:bg-gray-900">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-400 dark:text-gray-500">© 2025 Ariful Islam · University of Virginia</p>
+      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-gray-500">
+        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">Scholar</a>
+        <a href="mailto:arifulislam@virginia.edu" class="hover:text-indigo-500 transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
