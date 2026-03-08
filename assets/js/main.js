@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const currentFile = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('[data-nav]').forEach(function (link) {
     if (link.getAttribute('data-nav') === currentFile) {
-      link.classList.add('!text-indigo-600', 'dark:!text-indigo-400', 'font-semibold');
+      link.classList.add('!text-cyan-600', 'dark:!text-cyan-400', 'font-semibold');
     }
   });
 
@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Update button active state
         filterBtns.forEach(b => {
-          b.classList.remove('bg-indigo-600', 'text-white', 'border-indigo-600');
-          b.classList.add('text-gray-600', 'dark:text-gray-400', 'border-gray-300', 'dark:border-gray-600', 'hover:border-indigo-400');
+          b.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-600');
+          b.classList.add('text-gray-600', 'dark:text-slate-400', 'border-gray-300', 'dark:border-slate-600', 'hover:border-cyan-400');
         });
-        this.classList.add('bg-indigo-600', 'text-white', 'border-indigo-600');
-        this.classList.remove('text-gray-600', 'dark:text-gray-400', 'border-gray-300', 'dark:border-gray-600');
+        this.classList.add('bg-cyan-600', 'text-white', 'border-cyan-600');
+        this.classList.remove('text-gray-600', 'dark:text-slate-400', 'border-gray-300', 'dark:border-slate-600');
 
         // Show/hide publication items
         document.querySelectorAll('[data-pub-type]').forEach(function (item) {

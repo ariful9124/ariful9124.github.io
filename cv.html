@@ -6,7 +6,7 @@
   <title>CV — Ariful Islam</title>
   <meta name="description" content="Academic CV of Ariful Islam, PhD researcher at the University of Virginia." />
 
-  <script>try{if(localStorage.theme==='dark'||(!localStorage.theme&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(_){}</script>
+  <script>try{if(localStorage.theme!=='light')document.documentElement.classList.add('dark')}catch(_){}</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,42 +14,42 @@
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
-<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen">
+<body class="bg-white dark:bg-slate-950 text-gray-900 dark:text-slate-100 min-h-screen">
 
   <!-- NAV -->
-  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 no-print">
+  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-slate-800 no-print">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Ariful Islam</a>
+        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Ariful Islam</a>
         <div class="hidden md:flex items-center gap-0.5">
-          <a href="index.html"        data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Home</a>
-          <a href="research.html"     data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Research</a>
-          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Publications</a>
-          <a href="projects.html"     data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Projects</a>
-          <a href="blog.html"         data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Blog</a>
-          <a href="teaching.html"     data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Teaching</a>
-          <a href="cv.html"           data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">CV</a>
+          <a href="index.html"        data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Home</a>
+          <a href="research.html"     data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Research</a>
+          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Publications</a>
+          <a href="projects.html"     data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Projects</a>
+          <a href="blog.html"         data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Blog</a>
+          <a href="teaching.html"     data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Teaching</a>
+          <a href="cv.html"           data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">CV</a>
         </div>
         <div class="flex items-center gap-1">
-          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">
             <svg class="w-4 h-4 icon-sun hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
             <svg class="w-4 h-4 icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           </button>
-          <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-950">
       <div class="max-w-5xl mx-auto px-4 py-3 space-y-1">
-        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
-        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Research</a>
-        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Publications</a>
-        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
-        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
-        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Teaching</a>
-        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">CV</a>
+        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Home</a>
+        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Research</a>
+        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Publications</a>
+        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Projects</a>
+        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Blog</a>
+        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Teaching</a>
+        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">CV</a>
       </div>
     </div>
   </nav>
@@ -60,10 +60,10 @@
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-10 no-print">
       <div>
         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-1">Curriculum Vitae</h1>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">Last updated: March 2025</p>
+        <p class="text-gray-500 dark:text-slate-400 text-sm">Last updated: March 2025</p>
       </div>
       <a href="assets/cv/arifulislam_cv.pdf" download
-         class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition-colors no-print">
+         class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-medium transition-colors no-print">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         Download PDF
       </a>
@@ -81,9 +81,9 @@
 
       <!-- Education -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Education
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="timeline">
 
@@ -91,11 +91,11 @@
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white">Ph.D., Systems and Information Engineering</h3>
-                <p class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">University of Virginia, Charlottesville, VA</p>
+                <p class="text-cyan-600 dark:text-cyan-400 text-sm font-medium">University of Virginia, Charlottesville, VA</p>
               </div>
               <span class="text-sm text-gray-400 flex-shrink-0">2022 – Present</span>
             </div>
-            <p class="text-sm text-gray-600 dark:text-gray-400">
+            <p class="text-sm text-gray-600 dark:text-slate-400">
               Dissertation: "Passive Sensing and Machine Learning for Continuous Digital Health Monitoring"<br/>
               Advisor: Prof. [Advisor Name] · GPA: 3.9/4.0
             </p>
@@ -105,22 +105,22 @@
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white">M.S., [Field of Study]</h3>
-                <p class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">[University Name], [City, State]</p>
+                <p class="text-cyan-600 dark:text-cyan-400 text-sm font-medium">[University Name], [City, State]</p>
               </div>
               <span class="text-sm text-gray-400 flex-shrink-0">20XX – 20XX</span>
             </div>
-            <p class="text-sm text-gray-600 dark:text-gray-400">Thesis: "[Thesis Title]" · GPA: X.X/4.0</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400">Thesis: "[Thesis Title]" · GPA: X.X/4.0</p>
           </div>
 
           <div class="timeline-item">
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white">B.S., [Field of Study]</h3>
-                <p class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">[University Name], [Country]</p>
+                <p class="text-cyan-600 dark:text-cyan-400 text-sm font-medium">[University Name], [Country]</p>
               </div>
               <span class="text-sm text-gray-400 flex-shrink-0">20XX – 20XX</span>
             </div>
-            <p class="text-sm text-gray-600 dark:text-gray-400">GPA: X.X/4.0 · [Honors, if any]</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400">GPA: X.X/4.0 · [Honors, if any]</p>
           </div>
 
         </div>
@@ -128,9 +128,9 @@
 
       <!-- Research Experience -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Research Experience
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="timeline">
 
@@ -138,11 +138,11 @@
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white">Graduate Research Assistant</h3>
-                <p class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">[Lab Name], University of Virginia</p>
+                <p class="text-cyan-600 dark:text-cyan-400 text-sm font-medium">[Lab Name], University of Virginia</p>
               </div>
               <span class="text-sm text-gray-400 flex-shrink-0">2022 – Present</span>
             </div>
-            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 mt-1">
+            <ul class="text-sm text-gray-600 dark:text-slate-400 space-y-1 mt-1">
               <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>Developing multitask learning frameworks for mHealth intervention availability prediction</li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>Building passive sensing pipelines for mental health monitoring in cancer survivors</li>
               <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>Designing wearable IMU-based movement analysis systems for ALS assessment</li>
@@ -153,11 +153,11 @@
             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
               <div>
                 <h3 class="font-semibold text-gray-900 dark:text-white">Research Intern</h3>
-                <p class="text-indigo-600 dark:text-indigo-400 text-sm font-medium">[Company / Lab Name], [Location]</p>
+                <p class="text-cyan-600 dark:text-cyan-400 text-sm font-medium">[Company / Lab Name], [Location]</p>
               </div>
               <span class="text-sm text-gray-400 flex-shrink-0">Summer 20XX</span>
             </div>
-            <p class="text-sm text-gray-600 dark:text-gray-400">
+            <p class="text-sm text-gray-600 dark:text-slate-400">
               [Brief description of internship project and outcomes]
             </p>
           </div>
@@ -167,41 +167,41 @@
 
       <!-- Selected Publications -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Selected Publications
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="space-y-4">
-          <p class="text-xs text-gray-400 mb-4">Full list on <a href="publications.html" class="text-indigo-500 hover:underline">Publications page</a> and <a href="#" class="text-indigo-500 hover:underline">Google Scholar</a>. * = equal contribution.</p>
+          <p class="text-xs text-gray-400 mb-4">Full list on <a href="publications.html" class="text-cyan-500 hover:underline">Publications page</a> and <a href="#" class="text-cyan-500 hover:underline">Google Scholar</a>. * = equal contribution.</p>
 
           <div class="pub-entry">
-            <p class="text-sm text-gray-800 dark:text-gray-200">
+            <p class="text-sm text-gray-800 dark:text-slate-200">
               <strong>Islam, A.</strong>, [et al.] "MobileHealth: A Multimodal Sensing Framework for Passive Mental Health Monitoring."
-              <em class="text-gray-500 dark:text-gray-400">ACM UbiComp/IMWUT 2024.</em>
+              <em class="text-gray-500 dark:text-slate-400">ACM UbiComp/IMWUT 2024.</em>
             </p>
           </div>
           <div class="pub-entry">
-            <p class="text-sm text-gray-800 dark:text-gray-200">
+            <p class="text-sm text-gray-800 dark:text-slate-200">
               <strong>Islam, A.</strong>, [et al.] "Multitask Learning for Intervention Availability Prediction in Mobile Health Applications."
-              <em class="text-gray-500 dark:text-gray-400">AAAI 2024.</em>
+              <em class="text-gray-500 dark:text-slate-400">AAAI 2024.</em>
             </p>
           </div>
           <div class="pub-entry">
-            <p class="text-sm text-gray-800 dark:text-gray-200">
+            <p class="text-sm text-gray-800 dark:text-slate-200">
               <strong>Islam, A.</strong>, [et al.] "Wearable Sensor-Based Activity Recognition for Chronic Disease Monitoring."
-              <em class="text-gray-500 dark:text-gray-400">IEEE JBHI 2024.</em>
+              <em class="text-gray-500 dark:text-slate-400">IEEE JBHI 2024.</em>
             </p>
           </div>
           <div class="pub-entry">
-            <p class="text-sm text-gray-800 dark:text-gray-200">
+            <p class="text-sm text-gray-800 dark:text-slate-200">
               [Author A], <strong>Islam, A.</strong>, [et al.] "Digital Phenotyping for Depression Screening Using Passive Smartphone Sensing."
-              <em class="text-gray-500 dark:text-gray-400">ACM CHI 2023.</em>
+              <em class="text-gray-500 dark:text-slate-400">ACM CHI 2023.</em>
             </p>
           </div>
           <div class="pub-entry">
-            <p class="text-sm text-gray-800 dark:text-gray-200">
+            <p class="text-sm text-gray-800 dark:text-slate-200">
               <strong>Islam, A.</strong>, [et al.] "IMU-Based Gait Analysis for Early Detection of Neuromuscular Disorders."
-              <em class="text-gray-500 dark:text-gray-400">IEEE EMBC 2023.</em>
+              <em class="text-gray-500 dark:text-slate-400">IEEE EMBC 2023.</em>
             </p>
           </div>
         </div>
@@ -209,9 +209,9 @@
 
       <!-- Awards & Honors -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Awards &amp; Honors
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="space-y-3">
           <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
@@ -247,9 +247,9 @@
 
       <!-- Grants -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Grants &amp; Funding
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="space-y-3">
           <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
@@ -271,9 +271,9 @@
 
       <!-- Invited Talks -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Invited Talks &amp; Presentations
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="space-y-3">
           <div>
@@ -293,26 +293,26 @@
 
       <!-- Skills -->
       <section>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-5 flex items-center gap-3">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-5 flex items-center gap-3">
           Technical Skills
-          <span class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></span>
+          <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
         </h2>
         <div class="grid sm:grid-cols-2 gap-3 text-sm">
           <div class="flex gap-2">
             <span class="text-gray-400 w-28 flex-shrink-0">Languages</span>
-            <span class="text-gray-700 dark:text-gray-300">Python, R, MATLAB, Java, SQL</span>
+            <span class="text-gray-700 dark:text-slate-300">Python, R, MATLAB, Java, SQL</span>
           </div>
           <div class="flex gap-2">
             <span class="text-gray-400 w-28 flex-shrink-0">ML / DL</span>
-            <span class="text-gray-700 dark:text-gray-300">PyTorch, TensorFlow, scikit-learn, HuggingFace</span>
+            <span class="text-gray-700 dark:text-slate-300">PyTorch, TensorFlow, scikit-learn, HuggingFace</span>
           </div>
           <div class="flex gap-2">
             <span class="text-gray-400 w-28 flex-shrink-0">Tools</span>
-            <span class="text-gray-700 dark:text-gray-300">Git, Docker, SLURM, AWS, REDCap</span>
+            <span class="text-gray-700 dark:text-slate-300">Git, Docker, SLURM, AWS, REDCap</span>
           </div>
           <div class="flex gap-2">
             <span class="text-gray-400 w-28 flex-shrink-0">Sensing</span>
-            <span class="text-gray-700 dark:text-gray-300">IMU, GPS, PPG, EDA wearable sensors</span>
+            <span class="text-gray-700 dark:text-slate-300">IMU, GPS, PPG, EDA wearable sensors</span>
           </div>
         </div>
       </section>
@@ -320,13 +320,13 @@
     </div>
 
     <!-- Print/download prompt -->
-    <div class="mt-12 p-5 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 text-center no-print">
-      <p class="text-sm text-gray-400 dark:text-gray-500 mb-3">
-        Replace <code class="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-xs">assets/cv/arifulislam_cv.pdf</code>
+    <div class="mt-12 p-5 rounded-xl border border-dashed border-gray-300 dark:border-slate-700 text-center no-print">
+      <p class="text-sm text-gray-400 dark:text-slate-500 mb-3">
+        Replace <code class="bg-gray-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-xs">assets/cv/arifulislam_cv.pdf</code>
         with your actual PDF CV file.
       </p>
       <a href="assets/cv/arifulislam_cv.pdf" download
-         class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition-colors">
+         class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-medium transition-colors">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         Download Full CV (PDF)
       </a>
@@ -335,13 +335,13 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-gray-200 dark:border-gray-800 mt-12 no-print">
+  <footer class="border-t border-gray-200 dark:border-slate-800 mt-12 no-print">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-gray-400 dark:text-gray-500">© 2025 Ariful Islam · University of Virginia</p>
-      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-gray-500">
-        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">GitHub</a>
-        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">Scholar</a>
-        <a href="mailto:arifulislam@virginia.edu" class="hover:text-indigo-500 transition-colors">Email</a>
+      <p class="text-sm text-gray-400 dark:text-slate-500">© 2025 Ariful Islam · University of Virginia</p>
+      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-slate-500">
+        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-cyan-500 transition-colors">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-cyan-500 transition-colors">Scholar</a>
+        <a href="mailto:arifulislam@virginia.edu" class="hover:text-cyan-500 transition-colors">Email</a>
       </div>
     </div>
   </footer>

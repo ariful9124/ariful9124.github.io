@@ -6,7 +6,7 @@
   <title>Research — Ariful Islam</title>
   <meta name="description" content="Research themes and current projects by Ariful Islam: mobile sensing, AI health monitoring, wearable sensing, and multimodal ML." />
 
-  <script>try{if(localStorage.theme==='dark'||(!localStorage.theme&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(_){}</script>
+  <script>try{if(localStorage.theme!=='light')document.documentElement.classList.add('dark')}catch(_){}</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,42 +14,42 @@
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
-<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen">
+<body class="bg-white dark:bg-slate-950 text-gray-900 dark:text-slate-100 min-h-screen">
 
   <!-- NAV (shared across all pages) -->
-  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+  <nav class="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Ariful Islam</a>
+        <a href="index.html" class="font-semibold text-gray-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">Ariful Islam</a>
         <div class="hidden md:flex items-center gap-0.5">
-          <a href="index.html"        data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Home</a>
-          <a href="research.html"     data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Research</a>
-          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Publications</a>
-          <a href="projects.html"     data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Projects</a>
-          <a href="blog.html"         data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Blog</a>
-          <a href="teaching.html"     data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">Teaching</a>
-          <a href="cv.html"           data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">CV</a>
+          <a href="index.html"        data-nav="index.html"        class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Home</a>
+          <a href="research.html"     data-nav="research.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Research</a>
+          <a href="publications.html" data-nav="publications.html" class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Publications</a>
+          <a href="projects.html"     data-nav="projects.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Projects</a>
+          <a href="blog.html"         data-nav="blog.html"         class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Blog</a>
+          <a href="teaching.html"     data-nav="teaching.html"     class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">Teaching</a>
+          <a href="cv.html"           data-nav="cv.html"           class="px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">CV</a>
         </div>
         <div class="flex items-center gap-1">
-          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-lg text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">
             <svg class="w-4 h-4 icon-sun hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
             <svg class="w-4 h-4 icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           </button>
-          <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-950">
       <div class="max-w-5xl mx-auto px-4 py-3 space-y-1">
-        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
-        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Research</a>
-        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Publications</a>
-        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
-        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Blog</a>
-        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">Teaching</a>
-        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800">CV</a>
+        <a href="index.html"        data-nav="index.html"        class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Home</a>
+        <a href="research.html"     data-nav="research.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Research</a>
+        <a href="publications.html" data-nav="publications.html" class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Publications</a>
+        <a href="projects.html"     data-nav="projects.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Projects</a>
+        <a href="blog.html"         data-nav="blog.html"         class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Blog</a>
+        <a href="teaching.html"     data-nav="teaching.html"     class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">Teaching</a>
+        <a href="cv.html"           data-nav="cv.html"           class="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-800">CV</a>
       </div>
     </div>
   </nav>
@@ -59,7 +59,7 @@
     <!-- Page header -->
     <div class="mb-12">
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">Research</h1>
-      <p class="text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+      <p class="text-gray-600 dark:text-slate-400 max-w-2xl leading-relaxed">
         My research focuses on developing intelligent systems that passively monitor human health and behavior
         using everyday mobile devices and wearable sensors — making personalized healthcare scalable and
         accessible.
@@ -68,9 +68,9 @@
 
     <!-- ── Research Overview ─────────────────────────────────────────────── -->
     <section class="mb-14">
-      <div class="bg-gradient-to-br from-indigo-50 to-violet-50 dark:from-indigo-950/30 dark:to-violet-950/30 rounded-2xl border border-indigo-100 dark:border-indigo-900/50 p-8">
-        <h2 class="text-lg font-semibold text-indigo-900 dark:text-indigo-200 mb-3">Research Vision</h2>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      <div class="bg-gradient-to-br from-cyan-50 to-violet-50 dark:from-cyan-950/30 dark:to-violet-950/30 rounded-2xl border border-cyan-100 dark:border-cyan-900/50 p-8">
+        <h2 class="text-lg font-semibold text-cyan-900 dark:text-cyan-200 mb-3">Research Vision</h2>
+        <p class="text-gray-700 dark:text-slate-300 leading-relaxed">
           The proliferation of smartphones and wearables has created an unprecedented opportunity to
           continuously measure the physiological and behavioral signals that underpin health outcomes.
           My work builds the machine learning and signal processing infrastructure needed to transform
@@ -89,29 +89,29 @@
         <div class="grid md:grid-cols-5 gap-6 items-start">
           <div class="md:col-span-3">
             <div class="flex items-center gap-3 mb-3">
-              <div class="w-9 h-9 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+              <div class="w-9 h-9 bg-cyan-100 dark:bg-cyan-900/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-cyan-600 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
               </div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mobile Sensing for Mental Health</h3>
             </div>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            <p class="text-gray-600 dark:text-slate-400 leading-relaxed mb-4">
               Smartphones collect a rich stream of behavioral signals — GPS traces, communication patterns,
               screen usage, accelerometer data — that correlate with psychological states. I develop
-              <strong class="text-gray-800 dark:text-gray-200">passive sensing pipelines</strong> that
+              <strong class="text-gray-800 dark:text-slate-200">passive sensing pipelines</strong> that
               extract behavioral features from these streams and use supervised and semi-supervised learning
               to predict depression severity, anxiety episodes, and mood states without any active user effort.
             </p>
-            <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <div class="flex items-start gap-2"><span class="text-indigo-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Key methods:</strong> Deep learning on time-series, digital phenotyping, ecological momentary assessment</span></div>
-              <div class="flex items-start gap-2"><span class="text-indigo-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Target conditions:</strong> Depression, anxiety, bipolar disorder, schizophrenia</span></div>
-              <div class="flex items-start gap-2"><span class="text-indigo-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Impact:</strong> Enables continuous monitoring between clinical visits for high-risk populations</span></div>
+            <div class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
+              <div class="flex items-start gap-2"><span class="text-cyan-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Key methods:</strong> Deep learning on time-series, digital phenotyping, ecological momentary assessment</span></div>
+              <div class="flex items-start gap-2"><span class="text-cyan-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Target conditions:</strong> Depression, anxiety, bipolar disorder, schizophrenia</span></div>
+              <div class="flex items-start gap-2"><span class="text-cyan-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Impact:</strong> Enables continuous monitoring between clinical visits for high-risk populations</span></div>
             </div>
           </div>
           <div class="md:col-span-2">
-            <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6">
+            <div class="project-visual rounded-xl border border-gray-200 dark:border-slate-800 p-6">
               <svg viewBox="0 0 200 140" class="w-full h-auto opacity-80">
                 <rect x="60" y="10" width="80" height="120" rx="10" fill="none" stroke="#4f46e5" stroke-width="3"/>
-                <rect x="68" y="24" width="64" height="80" rx="4" fill="#e0e7ff" class="dark:fill-indigo-950"/>
+                <rect x="68" y="24" width="64" height="80" rx="4" fill="#e0e7ff" class="dark:fill-cyan-950"/>
                 <circle cx="100" cy="118" r="6" fill="#4f46e5" opacity="0.5"/>
                 <polyline points="76,80 88,60 100,70 112,45 124,55" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round"/>
                 <circle cx="88" cy="60" r="3" fill="#7c3aed"/>
@@ -133,20 +133,20 @@
               </div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">AI-Driven Health Monitoring</h3>
             </div>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-              I design <strong class="text-gray-800 dark:text-gray-200">multitask and transfer learning</strong>
+            <p class="text-gray-600 dark:text-slate-400 leading-relaxed mb-4">
+              I design <strong class="text-gray-800 dark:text-slate-200">multitask and transfer learning</strong>
               frameworks that can jointly predict multiple health outcomes from heterogeneous sensor streams.
               A key challenge is <em>intervention availability</em> — determining when and how a mobile health
               (mHealth) system should deliver interventions to maximize user engagement and health impact.
             </p>
-            <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <div class="flex items-start gap-2"><span class="text-violet-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Key methods:</strong> Multitask learning, contextual bandits, federated learning, domain adaptation</span></div>
-              <div class="flex items-start gap-2"><span class="text-violet-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Applications:</strong> Just-in-time adaptive interventions (JITAIs), cancer survivorship, chronic pain</span></div>
-              <div class="flex items-start gap-2"><span class="text-violet-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Impact:</strong> Improves intervention effectiveness by 20-30% over single-task baselines</span></div>
+            <div class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
+              <div class="flex items-start gap-2"><span class="text-violet-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Key methods:</strong> Multitask learning, contextual bandits, federated learning, domain adaptation</span></div>
+              <div class="flex items-start gap-2"><span class="text-violet-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Applications:</strong> Just-in-time adaptive interventions (JITAIs), cancer survivorship, chronic pain</span></div>
+              <div class="flex items-start gap-2"><span class="text-violet-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Impact:</strong> Improves intervention effectiveness by 20-30% over single-task baselines</span></div>
             </div>
           </div>
           <div class="md:col-span-2">
-            <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6">
+            <div class="project-visual rounded-xl border border-gray-200 dark:border-slate-800 p-6">
               <svg viewBox="0 0 200 140" class="w-full h-auto opacity-80">
                 <!-- Neural network diagram -->
                 <circle cx="40" cy="40" r="8" fill="none" stroke="#7c3aed" stroke-width="2"/>
@@ -185,21 +185,21 @@
               </div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Wearable Sensing for Neuromuscular Disease</h3>
             </div>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            <p class="text-gray-600 dark:text-slate-400 leading-relaxed mb-4">
               IMU sensors in smartwatches and body-worn devices capture fine-grained movement data that
-              reflects motor function. I develop <strong class="text-gray-800 dark:text-gray-200">signal
+              reflects motor function. I develop <strong class="text-gray-800 dark:text-slate-200">signal
               processing and deep learning methods</strong> to extract clinically meaningful gait and motion
               features for tracking ALS progression, quantifying tremor in Parkinson's disease, and
               assessing functional decline in neuromuscular disorders.
             </p>
-            <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <div class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Key methods:</strong> IMU signal processing, gait analysis, CNN-LSTM architectures</span></div>
-              <div class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Target conditions:</strong> ALS, Parkinson's disease, multiple sclerosis</span></div>
-              <div class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Impact:</strong> Enables objective, home-based monitoring to reduce clinical visit burden</span></div>
+            <div class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
+              <div class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Key methods:</strong> IMU signal processing, gait analysis, CNN-LSTM architectures</span></div>
+              <div class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Target conditions:</strong> ALS, Parkinson's disease, multiple sclerosis</span></div>
+              <div class="flex items-start gap-2"><span class="text-blue-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Impact:</strong> Enables objective, home-based monitoring to reduce clinical visit burden</span></div>
             </div>
           </div>
           <div class="md:col-span-2">
-            <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6">
+            <div class="project-visual rounded-xl border border-gray-200 dark:border-slate-800 p-6">
               <svg viewBox="0 0 200 140" class="w-full h-auto opacity-80">
                 <!-- Waveform -->
                 <polyline points="10,70 30,70 35,30 40,110 45,55 50,85 55,70 75,70 80,40 85,100 90,60 95,80 100,70 120,70 125,20 130,120 135,50 140,90 145,70 165,70 170,50 175,90 180,70 195,70"
@@ -223,21 +223,21 @@
               </div>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Multimodal ML for Behavioral Modeling</h3>
             </div>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            <p class="text-gray-600 dark:text-slate-400 leading-relaxed mb-4">
               Human health is inherently multimodal — combining accelerometry, GPS, audio features,
               physiology, and text provides a more complete picture than any single modality.
-              I develop <strong class="text-gray-800 dark:text-gray-200">late-fusion, cross-modal attention,
+              I develop <strong class="text-gray-800 dark:text-slate-200">late-fusion, cross-modal attention,
               and foundation model fine-tuning</strong> approaches that robustly handle missing modalities
               in real-world deployments.
             </p>
-            <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <div class="flex items-start gap-2"><span class="text-teal-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Key methods:</strong> Multimodal fusion, self-supervised pretraining, cross-modal transformers, LLM fine-tuning</span></div>
-              <div class="flex items-start gap-2"><span class="text-teal-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Modalities:</strong> Motion, GPS, audio, EHR, wearable physiology, free-text EMA</span></div>
-              <div class="flex items-start gap-2"><span class="text-teal-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-gray-300">Challenge:</strong> Missing data and modality-specific noise in naturalistic settings</span></div>
+            <div class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
+              <div class="flex items-start gap-2"><span class="text-teal-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Key methods:</strong> Multimodal fusion, self-supervised pretraining, cross-modal transformers, LLM fine-tuning</span></div>
+              <div class="flex items-start gap-2"><span class="text-teal-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Modalities:</strong> Motion, GPS, audio, EHR, wearable physiology, free-text EMA</span></div>
+              <div class="flex items-start gap-2"><span class="text-teal-500 font-bold mt-0.5">→</span><span><strong class="text-gray-700 dark:text-slate-300">Challenge:</strong> Missing data and modality-specific noise in naturalistic settings</span></div>
             </div>
           </div>
           <div class="md:col-span-2">
-            <div class="project-visual rounded-xl border border-gray-200 dark:border-gray-800 p-6">
+            <div class="project-visual rounded-xl border border-gray-200 dark:border-slate-800 p-6">
               <svg viewBox="0 0 200 140" class="w-full h-auto opacity-80">
                 <!-- Modality fusion diagram -->
                 <rect x="5" y="15" width="50" height="22" rx="5" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
@@ -272,29 +272,29 @@
     <section class="mb-14">
       <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Methodologies</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-900">
           <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-2">Signal Processing</h4>
-          <p class="text-xs text-gray-500 dark:text-gray-400">Filtering, feature extraction, segmentation, spectral analysis of IMU and physiological signals</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">Filtering, feature extraction, segmentation, spectral analysis of IMU and physiological signals</p>
         </div>
-        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-900">
           <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-2">Deep Learning</h4>
-          <p class="text-xs text-gray-500 dark:text-gray-400">Transformers, LSTM, CNN-based architectures for time-series classification and regression</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">Transformers, LSTM, CNN-based architectures for time-series classification and regression</p>
         </div>
-        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-900">
           <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-2">Federated Learning</h4>
-          <p class="text-xs text-gray-500 dark:text-gray-400">Privacy-preserving training on distributed health data without centralizing sensitive records</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">Privacy-preserving training on distributed health data without centralizing sensitive records</p>
         </div>
-        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-900">
           <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-2">Transfer &amp; Multitask Learning</h4>
-          <p class="text-xs text-gray-500 dark:text-gray-400">Leveraging shared representations across tasks and populations to overcome small labeled dataset sizes</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">Leveraging shared representations across tasks and populations to overcome small labeled dataset sizes</p>
         </div>
-        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-900">
           <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-2">Self-Supervised Pretraining</h4>
-          <p class="text-xs text-gray-500 dark:text-gray-400">Learning generalizable representations from large unlabeled wearable datasets via contrastive objectives</p>
+          <p class="text-xs text-gray-500 dark:text-slate-400">Learning generalizable representations from large unlabeled wearable datasets via contrastive objectives</p>
         </div>
-        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-900">
           <h4 class="font-medium text-gray-900 dark:text-white text-sm mb-2">Study Design &amp; Deployment</h4>
-          <p class="text-xs text-gray-500 content-gray-400 dark:text-gray-400">IRB protocol development, Android/iOS data collection apps, longitudinal clinical study management</p>
+          <p class="text-xs text-gray-500 content-gray-400 dark:text-slate-400">IRB protocol development, Android/iOS data collection apps, longitudinal clinical study management</p>
         </div>
       </div>
     </section>
@@ -304,17 +304,17 @@
       <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Collaborators &amp; Funding</h2>
       <div class="grid sm:grid-cols-2 gap-6">
         <div>
-          <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Collaborating Labs &amp; Institutions</h3>
-          <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0"></span>[Collaborating Lab 1] — [Institution]</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0"></span>[Collaborating Lab 2] — [Institution]</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0"></span>UVA School of Medicine — Clinical Collaborators</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0"></span>[Add more collaborators]</li>
+          <h3 class="text-sm font-semibold text-gray-700 dark:text-slate-300 uppercase tracking-wide mb-3">Collaborating Labs &amp; Institutions</h3>
+          <ul class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full flex-shrink-0"></span>[Collaborating Lab 1] — [Institution]</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full flex-shrink-0"></span>[Collaborating Lab 2] — [Institution]</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full flex-shrink-0"></span>UVA School of Medicine — Clinical Collaborators</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full flex-shrink-0"></span>[Add more collaborators]</li>
           </ul>
         </div>
         <div>
-          <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Funding Support</h3>
-          <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+          <h3 class="text-sm font-semibold text-gray-700 dark:text-slate-300 uppercase tracking-wide mb-3">Funding Support</h3>
+          <ul class="space-y-2 text-sm text-gray-600 dark:text-slate-400">
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-violet-500 rounded-full flex-shrink-0"></span>[NIH / NSF Grant Name and Number]</li>
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-violet-500 rounded-full flex-shrink-0"></span>[Fellowship Name] — [Funder]</li>
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-violet-500 rounded-full flex-shrink-0"></span>University of Virginia Research Fund</li>
@@ -326,13 +326,13 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-gray-200 dark:border-gray-800">
+  <footer class="border-t border-gray-200 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-sm text-gray-400 dark:text-gray-500">© 2025 Ariful Islam · University of Virginia</p>
-      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-gray-500">
-        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">GitHub</a>
-        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-indigo-500 transition-colors">Scholar</a>
-        <a href="mailto:arifulislam@virginia.edu" class="hover:text-indigo-500 transition-colors">Email</a>
+      <p class="text-sm text-gray-400 dark:text-slate-500">© 2025 Ariful Islam · University of Virginia</p>
+      <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-slate-500">
+        <a href="https://github.com/arifulislamuva" target="_blank" rel="noopener" class="hover:text-cyan-500 transition-colors">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="hover:text-cyan-500 transition-colors">Scholar</a>
+        <a href="mailto:arifulislam@virginia.edu" class="hover:text-cyan-500 transition-colors">Email</a>
       </div>
     </div>
   </footer>
