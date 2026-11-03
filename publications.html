@@ -66,9 +66,9 @@
       </div>
       <!-- Stats -->
       <div class="flex gap-6 text-center">
-        <div><div class="text-2xl font-bold text-cyan-600 dark:text-cyan-400">5</div><div class="text-xs text-gray-400">Peer-Reviewed</div></div>
+        <div><div class="text-2xl font-bold text-cyan-600 dark:text-cyan-400">6</div><div class="text-xs text-gray-400">Peer-Reviewed</div></div>
         <div><div class="text-2xl font-bold text-green-600 dark:text-green-400">2</div><div class="text-xs text-gray-400">Posters</div></div>
-        <div><div class="text-2xl font-bold text-violet-600 dark:text-violet-400">6</div><div class="text-xs text-gray-400">Preprints &amp; In Prep</div></div>
+        <div><div class="text-2xl font-bold text-violet-600 dark:text-violet-400">5</div><div class="text-xs text-gray-400">In Preparation</div></div>
       </div>
     </div>
 
@@ -77,7 +77,7 @@
       <button data-filter-btn="all"        class="px-4 py-1.5 rounded-full border text-sm bg-cyan-600 text-white border-cyan-600 transition-colors">All</button>
       <button data-filter-btn="conference" class="px-4 py-1.5 rounded-full border text-sm text-gray-600 dark:text-slate-400 border-gray-300 dark:border-slate-600 hover:border-cyan-400 transition-colors">Conference</button>
       <button data-filter-btn="poster"     class="px-4 py-1.5 rounded-full border text-sm text-gray-600 dark:text-slate-400 border-gray-300 dark:border-slate-600 hover:border-cyan-400 transition-colors">Poster</button>
-      <button data-filter-btn="preprint"   class="px-4 py-1.5 rounded-full border text-sm text-gray-600 dark:text-slate-400 border-gray-300 dark:border-slate-600 hover:border-cyan-400 transition-colors">Preprints &amp; In Prep</button>
+      <button data-filter-btn="preprint"   class="px-4 py-1.5 rounded-full border text-sm text-gray-600 dark:text-slate-400 border-gray-300 dark:border-slate-600 hover:border-cyan-400 transition-colors">In Preparation</button>
     </div>
 
     <!-- ── 2026 ─────────────────────────────────────────────────────────── -->
@@ -87,6 +87,25 @@
         <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
       </h2>
       <div class="space-y-7 mb-10">
+
+        <!-- Accepted — ACM IMWUT (journal) -->
+        <div class="pub-entry" data-pub-type="conference">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="tag bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs">Accepted</span>
+            <span class="text-sm font-medium text-gray-500 dark:text-slate-400">Proc. ACM IMWUT</span>
+          </div>
+          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1.5 leading-snug">
+            PULSE: Agentic Investigation with Passive Sensing for Proactive Affective Intervention in Cancer Survivorship
+          </h3>
+          <p class="text-sm text-gray-500 dark:text-slate-400 mb-3">
+            Zhiyuan Wang, Subigya Nepal, <span class="font-medium text-gray-700 dark:text-slate-300">Ariful Islam</span>,
+            Indrajeet Ghosh, Xinyu Chen, Katharine E. Daniel, Laura E. Barnes, Philip I. Chow
+          </p>
+          <div class="flex flex-wrap gap-3 text-xs">
+            <a href="https://arxiv.org/abs/2605.17679" target="_blank" rel="noopener"
+               class="text-cyan-600 dark:text-cyan-400 hover:underline">arXiv</a>
+          </div>
+        </div>
 
         <!-- Accepted — IEEE ICHI 2026 (Islam first author) -->
         <div class="pub-entry" data-pub-type="conference">
@@ -210,36 +229,6 @@
           <p class="text-sm text-gray-500 dark:text-slate-400 mb-3">
             S. Saha, K. M. Khabir, S. S. Abir, <span class="font-medium text-gray-700 dark:text-slate-300">Ariful Islam</span>
           </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ── Preprints ────────────────────────────────────────────────────── -->
-    <div data-year-group>
-      <h2 class="text-lg font-semibold text-gray-400 dark:text-slate-500 mb-6 flex items-center gap-3">
-        Preprints
-        <span class="flex-1 h-px bg-gray-200 dark:bg-slate-800"></span>
-      </h2>
-      <div class="space-y-7 mb-10">
-
-        <!-- Preprint — arXiv -->
-        <div class="pub-entry" data-pub-type="preprint">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="tag bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs">Preprint</span>
-            <span class="text-sm font-medium text-gray-500 dark:text-slate-400">arXiv:2605.17679</span>
-          </div>
-          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-1.5 leading-snug">
-            PULSE: Agentic Investigation with Passive Sensing for Proactive Intervention in Cancer Survivorship
-          </h3>
-          <p class="text-sm text-gray-500 dark:text-slate-400 mb-3">
-            Zhiyuan Wang, <span class="font-medium text-gray-700 dark:text-slate-300">Ariful Islam</span>,
-            Indrajeet Ghosh, Xinyu Chen, Katharine E. Daniel, Subigya Nepal, Philip I. Chow, Laura E. Barnes
-          </p>
-          <div class="flex flex-wrap gap-3 text-xs">
-            <a href="https://arxiv.org/abs/2605.17679" target="_blank" rel="noopener"
-               class="text-cyan-600 dark:text-cyan-400 hover:underline">arXiv</a>
-          </div>
         </div>
 
       </div>
